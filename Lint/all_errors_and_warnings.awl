@@ -1,0 +1,7 @@
+waive -du {  {FSM}  }  -msg {Input 'edge_cnt[4:0]' declared but not read.[Hierarchy: ':SYS_TOP:UART@UART_TOP:RX@UART_RX:control_unit@FSM']}  -rule {  {W240}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {SYS_TOP}  }  -msg {Variable 'Arith_flag' set but not read.[Hierarchy: ':SYS_TOP']}  -rule {  {W528}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {SYS_TOP}  }  -msg {Variable 'CMP_flag' set but not read.[Hierarchy: ':SYS_TOP']}  -rule {  {W528}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {SYS_TOP}  }  -msg {Variable 'Carry_Flag' set but not read.[Hierarchy: ':SYS_TOP']}  -rule {  {W528}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {SYS_TOP}  }  -msg {Variable 'Logic_flag' set but not read.[Hierarchy: ':SYS_TOP']}  -rule {  {W528}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {SYS_TOP}  }  -msg {Variable 'Shift_flag' set but not read.[Hierarchy: ':SYS_TOP']}  -rule {  {W528}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
+waive -du {  {CLK_GATE}  }  -msg {Latch inferred for signal 'Latch_Out' in module 'CLK_GATE'}  -rule {  {InferLatch}  }  -comment {Created by ICer on 07-Oct-2026 03:55:48}  -exact 
