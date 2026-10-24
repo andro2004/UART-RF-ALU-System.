@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sat Oct 10 02:31:20 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: Processing_unit/ALU_OUT_reg_8_
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: Processing_unit/ALU_OUT_reg_9_
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Processing_unit/ALU_OUT_reg_8_/CK (SEDFFX2M)            0.00       0.00 r
+  Processing_unit/ALU_OUT_reg_8_/Q (SEDFFX2M)             0.57       0.57 f
+  Processing_unit/ALU_OUT_reg_9_/SI (SEDFFX2M)            0.00       0.57 f
+  data arrival time                                                  0.57
+
+  clock ALU_CLK (rise edge)                              20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.20      19.80
+  Processing_unit/ALU_OUT_reg_9_/CK (SEDFFX2M)            0.00      19.80 r
+  library setup time                                     -0.82      18.98
+  data required time                                                18.98
+  --------------------------------------------------------------------------
+  data required time                                                18.98
+  data arrival time                                                 -0.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                       18.42
+
+
+  Startpoint: SE (input port clocked by scan_clk)
+  Endpoint: UART/RX/edge_counting_unit/bit_cnt_reg_2_
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 r
+  SE (in)                                                 0.00      20.00 r
+  UART/test_se (UART_TOP_DATA_WIDTH8_PRESCALE_WIDTH6_test_1)
+                                                          0.00      20.00 r
+  UART/U4/Y (CLKINVX40M)                                  0.04      20.04 f
+  UART/U3/Y (CLKINVX40M)                                  0.07      20.11 r
+  UART/RX/test_se (UART_RX_DATA_WIDTH8_test_1)            0.00      20.11 r
+  UART/RX/U5/Y (CLKINVX40M)                               0.06      20.18 f
+  UART/RX/U4/Y (CLKINVX40M)                               0.12      20.30 r
+  UART/RX/edge_counting_unit/test_se (edge_bit_counter_test_1)
+                                                          0.00      20.30 r
+  UART/RX/edge_counting_unit/U4/Y (CLKINVX40M)            0.07      20.36 f
+  UART/RX/edge_counting_unit/U3/Y (INVX4M)                0.79      21.16 r
+  UART/RX/edge_counting_unit/bit_cnt_reg_2_/SE (SDFFRX2M)
+                                                          0.00      21.16 r
+  data arrival time                                                 21.16
+
+  clock scan_clk (rise edge)                            100.00     100.00
+  clock network delay (ideal)                             0.00     100.00
+  clock uncertainty                                      -0.20      99.80
+  UART/RX/edge_counting_unit/bit_cnt_reg_2_/CK (SDFFRX2M)
+                                                          0.00      99.80 r
+  library setup time                                     -0.68      99.12
+  data required time                                                99.12
+  --------------------------------------------------------------------------
+  data required time                                                99.12
+  data arrival time                                                -21.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                       77.97
+
+
+1

@@ -1,0 +1,34 @@
+Info:  Net Ref:/WORK/SYS_TOP/SO is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW01_add_1/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net Imp:/WORK/ALU_DATA_WIDTH8_DW_div_uns_0/divide_by_0 is undriven.
+Info:  guide_uniquify 97 (Line: 662)  Cannot find object "RX_ClkDiv/U6" in design 'SYS_TOP'.
+Info:  SVF Operation 97 (Line: 662) - uniquify.  Status: rejected
+Info:  guide_uniquify 97 (Line: 662)  Cannot find object "TX_ClkDiv/U6" in design 'SYS_TOP'.
+Info:  guide_uniquify 109 (Line: 751)  Cannot find object "Processing_unit/dp_cluster_0/mult_25" in design 'SYS_TOP'.
+Info:  SVF Operation 109 (Line: 751) - uniquify.  Status: rejected
+Info:  guide_uniquify 110 (Line: 755)  Cannot find object "TX_ClkDiv/counter/dp_cluster_0/mult_add_18_aco" in design 'SYS_TOP'.
+Info:  SVF Operation 110 (Line: 755) - uniquify.  Status: rejected
+Info:  guide_uniquify 111 (Line: 759)  Cannot find object "RX_ClkDiv/counter/dp_cluster_0/mult_add_18_aco" in design 'SYS_TOP'.
+Info:  Pre-verification of Ref:/WORK/ALU_DATA_WIDTH8/div_29 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/ALU_DATA_WIDTH8/mult_25 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/CLK_DIV_Counter_WIDTH6_1/mult_add_18_aco SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/CLK_DIV_Counter_WIDTH6_0/mult_add_18_aco SUCCEEDED.
+Info:  guide_scan_input 147 (Line: 907)  synopsys_auto_setup is false, ignoring Scan Input guidance.
+Info:  SVF Operation 147 (Line: 907) - scan_input.  Status: rejected
+
+Info:  guide_change_names 170 (Line: 1587)  Cannot find reference design 'ALU_DATA_WIDTH8_DW_div_uns_0'.
+Info:  SVF Operation 170 (Line: 1587) - change_names.  Status: rejected
+
+Info:  guide_change_names 171 (Line: 1681)  Cannot find reference design 'ALU_DATA_WIDTH8_DW02_mult_0'.
+Info:  SVF Operation 171 (Line: 1681) - change_names.  Status: rejected
+

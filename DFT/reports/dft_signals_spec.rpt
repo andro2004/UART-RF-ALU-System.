@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : DFT signals
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sat Oct 10 02:31:20 2026
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+SE                 ScanEnable          1         -         -         -
+SI                 ScanDataIn          -         -         Delay 0.0 -
+SO                 ScanDataOut         -         -         -         -
+
+========================================
+TEST MODE: Internal_scan
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+SE                 ScanEnable          1         -         -         -
+SI                 ScanDataIn          -         -         Delay 0.0 -
+SO                 ScanDataOut         -         -         -         -
+
+========================================
+TEST MODE: Mission_mode
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+SE                 ScanEnable          1         -         -         -
+SI                 ScanDataIn          -         -         Delay 0.0 -
+SO                 ScanDataOut         -         -         -         -
+
+1

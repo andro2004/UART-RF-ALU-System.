@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sat Oct 10 02:31:20 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: Processing_unit/Arith_flag_reg
+              (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Endpoint: Processing_unit/CMP_flag_reg
+            (rising edge-triggered flip-flop clocked by ALU_CLK)
+  Path Group: ALU_CLK
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Processing_unit/Arith_flag_reg/CK (SEDFFX2M)            0.00       0.00 r
+  Processing_unit/Arith_flag_reg/Q (SEDFFX2M)             0.48       0.48 r
+  Processing_unit/CMP_flag_reg/SI (SEDFFX2M)              0.00       0.48 r
+  data arrival time                                                  0.48
+
+  clock ALU_CLK (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Processing_unit/CMP_flag_reg/CK (SEDFFX2M)              0.00       0.10 r
+  library hold time                                      -0.31      -0.21
+  data required time                                                -0.21
+  --------------------------------------------------------------------------
+  data required time                                                -0.21
+  data arrival time                                                 -0.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.70
+
+
+  Startpoint: UART/RX/data_sampling_unit/samples_reg_2_
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: UART/RX/deserializing_unit/P_DATA_reg_0_
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SYS_TOP            tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  UART/RX/data_sampling_unit/samples_reg_2_/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  UART/RX/data_sampling_unit/samples_reg_2_/Q (SDFFRX1M)
+                                                          0.64       0.64 r
+  UART/RX/data_sampling_unit/test_so (data_sampling_test_1)
+                                                          0.00       0.64 r
+  UART/RX/deserializing_unit/test_si (deserializer_DATA_WIDTH8_test_1)
+                                                          0.00       0.64 r
+  UART/RX/deserializing_unit/P_DATA_reg_0_/SI (SDFFRQX2M)
+                                                          0.00       0.64 r
+  data arrival time                                                  0.64
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  UART/RX/deserializing_unit/P_DATA_reg_0_/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.64
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.77
+
+
+1
