@@ -1,0 +1,140 @@
+Testing RF_Wr
+Address:05,Data:ff
+@time:96029000 frame0 sent
+@time:191515000 frame1 sent
+@time:287000000 frame2 sent
+@time:287000000 Testing RF_Rd:
+Address:05
+@time:382486000 frame0 sent
+@time:477972000 frame1 sent
+data recived:ff
+Read Command passed
+@time:613201000 Testing ALU_OP:
+op_A:05,op_B:03,ALU_FUN:00
+@time:708687000 frame0 sent
+@time:804173000 frame1 sent
+@time:899659000 frame2 sent
+@time:995145000 frame3 sent
+data recived:0008
+ALU Command passed
+@time:1229522000 Testing ALU_OP:
+op_A:09,op_B:04,ALU_FUN:01
+@time:1325008000 frame0 sent
+@time:1420494000 frame1 sent
+@time:1515980000 frame2 sent
+@time:1611466000 frame3 sent
+data recived:0005
+ALU Command passed
+@time:1845843000 Testing ALU_OP:
+op_A:02,op_B:05,ALU_FUN:02
+@time:1941329000 frame0 sent
+@time:2036815000 frame1 sent
+@time:2132301000 frame2 sent
+@time:2227787000 frame3 sent
+data recived:000a
+ALU Command passed
+@time:2462164000 Testing ALU_OP:
+op_A:0f,op_B:03,ALU_FUN:03
+@time:2557650000 frame0 sent
+@time:2653136000 frame1 sent
+@time:2748622000 frame2 sent
+@time:2844108000 frame3 sent
+data recived:0005
+ALU Command passed
+@time:3078485000 Testing ALU_OP:
+op_A:05,op_B:03,ALU_FUN:04
+@time:3173971000 frame0 sent
+@time:3269456000 frame1 sent
+@time:3364942000 frame2 sent
+@time:3460428000 frame3 sent
+data recived:0001
+ALU Command passed
+@time:3694805000 Testing ALU_OP:
+op_A:09,op_B:04,ALU_FUN:05
+@time:3790291000 frame0 sent
+@time:3885777000 frame1 sent
+@time:3981263000 frame2 sent
+@time:4076749000 frame3 sent
+data recived:000d
+ALU Command passed
+@time:4311126000 Testing ALU_OP:
+op_A:02,op_B:05,ALU_FUN:06
+@time:4406612000 frame0 sent
+@time:4502098000 frame1 sent
+@time:4597584000 frame2 sent
+@time:4693070000 frame3 sent
+data recived:ffff
+ALU Command passed
+@time:4927447000 Testing ALU_OP:
+op_A:0f,op_B:03,ALU_FUN:07
+@time:5022933000 frame0 sent
+@time:5118419000 frame1 sent
+@time:5213905000 frame2 sent
+@time:5309391000 frame3 sent
+data recived:fff0
+ALU Command passed
+@time:5543768000 Testing ALU_OP:
+op_A:02,op_B:05,ALU_FUN:08
+@time:5639254000 frame0 sent
+@time:5734740000 frame1 sent
+@time:5830226000 frame2 sent
+@time:5925712000 frame3 sent
+data recived:0007
+ALU Command passed
+@time:6160089000 Testing ALU_OP:
+op_A:0f,op_B:03,ALU_FUN:09
+@time:6255575000 frame0 sent
+@time:6351061000 frame1 sent
+@time:6446547000 frame2 sent
+@time:6542033000 frame3 sent
+data recived:fff3
+ALU Command passed
+@time:6776410000 Testing ALU_OP:
+op_A:05,op_B:03,ALU_FUN:0a
+@time:6871896000 frame0 sent
+@time:6967382000 frame1 sent
+@time:7062868000 frame2 sent
+@time:7158354000 frame3 sent
+data recived:0000
+ALU Command passed
+@time:7392731000 Testing ALU_OP:
+op_A:09,op_B:04,ALU_FUN:0b
+@time:7488217000 frame0 sent
+@time:7583703000 frame1 sent
+@time:7679189000 frame2 sent
+@time:7774675000 frame3 sent
+data recived:0002
+ALU Command passed
+@time:8009052000 Testing ALU_OP:
+op_A:09,op_B:04,ALU_FUN:0c
+@time:8104538000 frame0 sent
+@time:8200024000 frame1 sent
+@time:8295510000 frame2 sent
+@time:8390996000 frame3 sent
+data recived:0000
+ALU Command passed
+@time:8625373000 Testing ALU_OP:
+op_A:05,op_B:03,ALU_FUN:0d
+@time:8720859000 frame0 sent
+@time:8816345000 frame1 sent
+@time:8911831000 frame2 sent
+@time:9007317000 frame3 sent
+data recived:0002
+ALU Command passed
+@time:9241693000 Testing ALU_OP:
+op_A:09,op_B:04,ALU_FUN:0e
+@time:9337179000 frame0 sent
+@time:9432665000 frame1 sent
+@time:9528151000 frame2 sent
+@time:9623637000 frame3 sent
+data recived:0012
+ALU Command passed
+@time:9858014000 Testing ALU_NO_OP
+ALU_FUN:0f
+@time:9953500000 frame0 sent
+@time:10048986000 frame1 sent
+data recived:0000
+ALU Command passed
+passed tests:         17
+failed tests:          0
+Final_System_tb_sim.sv:308: $finish called at 10283362610 (1ps)
